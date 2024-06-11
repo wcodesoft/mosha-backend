@@ -1,4 +1,4 @@
-package author_service
+package main
 
 import (
 	"context"
