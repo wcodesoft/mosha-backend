@@ -13,7 +13,7 @@ brew install act
 To run the libraries test workflows execute:
 
 ```bash
-act workflow_dispatch -j test_autor_service
+act workflow_dispatch -j test_author_service
 ```
 
 In the root of the project.
@@ -30,5 +30,5 @@ CODACY_PROJECT_TOKEN=<CODACY_PROJECT_TOKEN>
 And then run the actions with the `--secret-file` flag:
 
 ```bash
-act workflow_dispatch -j test_autor_service --secret-file .secrets
+act workflow_dispatch -j test_author_service --secret-file .secrets
 ```

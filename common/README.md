@@ -6,7 +6,7 @@ This is the common code used by all Mosha services.
 
 Prerequisites:
 
-* Have protoc installed: https://grpc.io/docs/protoc-installation/
+* Have protoc installed: <https://grpc.io/docs/protoc-installation/>
 
 The communication between services is done using gRPC. 
 All service protos definitions are located in `proto` directory.

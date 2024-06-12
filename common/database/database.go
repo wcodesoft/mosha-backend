@@ -12,4 +12,6 @@ type Database[T any] interface {
 	Update(ctx context.Context, id string, item *T) (*T, error)
 	// Delete deletes an item from the database.
 	Delete(ctx context.Context, id string) error
+	// List lists all items in the database.
+	List(ctx context.Context) []*T
 }

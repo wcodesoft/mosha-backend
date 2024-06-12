@@ -1,11 +1,11 @@
-name: Test Author Service
+name: Test Quote Service
 
 on:
   push:
     branches:
       - "*"
     paths:
-      - "author_service/**"
+      - "quote_service/**"
       - "common/**"
 
   # Allows you to run this workflow manually from the Actions tab
@@ -16,7 +16,7 @@ env:
 
 jobs:
 
-  test_author_service:
+  test_quote_service:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,7 +32,7 @@ jobs:
         run: go mod tidy
 
       - name: Run Tests
-        run: go test -coverprofile=cover.out ./author_service/...
+        run: go test -coverprofile=cover.out ./quote_service/...
 
       - name: Report test-coverage to Codacy
         run: |
